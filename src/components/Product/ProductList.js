@@ -2,7 +2,6 @@ import "./ProductList.css";
 
 const ProductList = ({ state, dispatch }) => {
   const { products, cart } = state;
-  console.log(state)
   const handleAddToCart = (product)=>{
     dispatch({
         type:'ADD_TO_CART',
