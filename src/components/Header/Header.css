@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.img {
+    width: 4rem;
+    padding: 1rem;
+    position: relative;
+}
+.badge {
+    position: absolute;
+    background-color: #f79736;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    line-height: 21px;
+    text-align: center;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+}

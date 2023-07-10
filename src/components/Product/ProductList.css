@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    border: 1px solid grey;
+    margin: 1rem;
+    gap: 0.5rem;
+    width: 260px;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.image {
+    width: auto;
+    height: auto;
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.image:hover {
+	transform: scale(1.1);
+}
+.label-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem;
+}
+.btn-add {
+    background-color: #4caf50;
+    color: white;
+}
+.btn-remove {
+    background-color: #cd3c3c;
+    color: white;
+}
