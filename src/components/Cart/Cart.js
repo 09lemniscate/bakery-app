@@ -12,6 +12,9 @@ const Cart = ({state,dispatch})=>{
             }
     })
     }
+    const handleCheckOut = ()=>{
+        console.log({cart,total})
+    }
     useEffect(()=>{
         setTotal(cart?.reduce((acc,prod)=>acc+Number(prod.price)*prod.quantity,0))
     },[cart])
@@ -26,7 +29,6 @@ const Cart = ({state,dispatch})=>{
             (
                 cart.map((product)=>{
                     return (
-                        <>
                         <div className="item" key={product.id}>
                             <img className="item-img" src={product.img} alt={product.name} />
                             <div>
@@ -42,13 +44,12 @@ const Cart = ({state,dispatch})=>{
                             </div>
                             </div>
                         </div>
-                        
-                       
-                        </>
                     )
                 })
-            ) : <span>Cart is empty</span>    
+            ) 
+            : <h3 className="text-align-center">Cart is empty</h3>    
         }
+        {cart.length && <div className="align-center"><button className="btn w-100 btn-add" onClick={handleCheckOut}>Checkout</button></div>}
         </>
     )
 }

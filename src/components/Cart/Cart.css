@@ -12,6 +12,12 @@
     align-items: center;
     justify-content: space-around;
 }
+.align-center {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
 .back-img {
     width: 2rem;
     padding: 0 1rem;

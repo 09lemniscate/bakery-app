@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About Project
+
+In this project there are assets folder to store the dummy images , constant folder to store the dummy json , state-management to store the reducer and components to store product listing and cart details page.
+
+We have used useReducer for state management .
+
+
 ## Available Scripts
 
 In the project directory, you can run:

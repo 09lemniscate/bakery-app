@@ -30,11 +30,9 @@
     gap: 0.5rem;
     padding: 0.8rem;
 }
-.btn-add {
-    background-color: #4caf50;
-    color: white;
-}
+
 .btn-remove {
     background-color: #cd3c3c;
     color: white;
+    cursor: pointer;
 }
