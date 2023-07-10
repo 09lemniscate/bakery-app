@@ -2,7 +2,7 @@ import ProductList from './components/Product/ProductList';
 import { jsonData } from './constants/jsonData';
 import "./App.css"
 import { useEffect, useReducer } from 'react';
-import { Reducer } from './reducer';
+import { Reducer } from './state-management/reducer';
 import Header from './components/Header/Header';
 import Cart from './components/Cart/Cart';
 import { Route, Routes } from 'react-router';
